@@ -22,9 +22,18 @@ This is node.js wrapper for the Cloudflow API.  It is available in async and syn
 	// Doing calls with that session
 	var whitepapers = apiSync.whitepaper.list();
 
-	// Doing async Cloudflow calls
+	// Doing async Cloudflow calls (returning callbacks)
 	apiAsync.auth.create_session('user', 'password', function(session) {
 		...
 	}, function(error) {
 		...
 	});
+
+        // Doing async Cloudflow calls (returning a promise)
+	apiAsync.auth.create_session('user', 'password')
+	.then(session => {
+		...
+	})
+	.catch(error => {
+		...
+	})
