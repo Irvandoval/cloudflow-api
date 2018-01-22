@@ -29,7 +29,7 @@ This is node.js wrapper for the Cloudflow API.  It is available in async and syn
 		...
 	});
 
-        // Doing async Cloudflow calls (returning a promise)
+	// Doing async Cloudflow calls (returning a promise)
 	apiAsync.auth.create_session('user', 'password')
 	.then(session => {
 		...
