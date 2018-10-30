@@ -12,6 +12,7 @@
   "author": "Hybrid Software",
   "license": "MPL-2.0",
   "dependencies": {
+    "http-parser-js": "^0.5.0",
     "lodash": "^4.17.4",
     "request": "^2.79.0",
     "sync-request": "^4.0.1"
